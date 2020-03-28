@@ -65,7 +65,7 @@ class Student
   end 
   
   def self.find_by_name(name)
-    if self.name = name 
+    if self.name == name 
       self.new_from_db
     else 
       self.create 
