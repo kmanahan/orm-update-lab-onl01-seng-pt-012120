@@ -57,10 +57,17 @@ class Student
   end 
 
   def self.new_from_db(array)
+<<<<<<< HEAD
     id = array[0]
     name = array[1]
     grade = array[2]
     new_student = self.new(id, name, grade)
     new_student
+=======
+    new_student.id = array[0]
+    new_student.name = array[1]
+    new_student.grade = array[2]
+    new_student = self.new
+>>>>>>> 5e9b9eb36023e37a3219ad892c7ac9d4cb806125
   end 
 end
