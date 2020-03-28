@@ -69,6 +69,7 @@ class Student
       SELECT * FROM students
       WHERE name = ?
     SQL
+    self.new
     DB[:conn].execute(sql, name)
   end
 end
