@@ -69,7 +69,6 @@ class Student
       self.new_from_db
     else 
       self.create 
-        self.new_from_db 
       end
       
   end 
