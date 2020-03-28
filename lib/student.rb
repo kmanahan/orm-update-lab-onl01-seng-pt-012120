@@ -70,6 +70,6 @@ class Student
       WHERE name = ?
     SQL
     self.new_from_db(array[1])
-    DB[:conn].execute(sql, array)
+    DB[:conn].execute(sql, name)
   end
 end
