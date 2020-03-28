@@ -71,6 +71,6 @@ class Student
     SQL
     array = [1]
     self.new_from_db(array)
-    DB[:conn].execute(sql, name)
+    DB[:conn].execute(sql, self.name)
   end
 end
