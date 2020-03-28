@@ -69,6 +69,6 @@ class Student
       SELECT * FROM students
       WHERE name = ?
     SQL
-    self.new_from_db
+    find = self.new_from_db(array)
     DB[:conn].execute(sql, name)
 end
