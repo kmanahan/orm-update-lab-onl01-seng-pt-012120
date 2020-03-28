@@ -64,13 +64,13 @@ class Student
     new_student
   end 
   
-  def self.find_by_name(name)
+  def self.find_by_name
    sql = <<-SQL
       SELECT * FROM students
       WHERE name = ?
     SQL
     array = [1]
     self.new_from_db(array)
-    DB[:conn].execute(sql, name)
+    DB[:conn].execute(sql)
   end
 end
